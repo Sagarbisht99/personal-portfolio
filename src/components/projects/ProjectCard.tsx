@@ -157,12 +157,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </>
             )}
           </div>
-          <Link
-            href={project.projectDetailsPageSlug}
-            className="text-secondary hover:text-primary flex items-center gap-2 text-sm underline-offset-4 transition-colors hover:underline"
-          >
-            View Details <ArrowRight className="size-4" />
-          </Link>
+         
         </CardFooter>
       )}
     </Card>
