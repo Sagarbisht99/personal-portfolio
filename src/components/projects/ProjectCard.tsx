@@ -165,12 +165,16 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </>
             )}
           </div>
+<<<<<<< HEAD
           <Link
             href={detailsHref}
             className="text-secondary hover:text-primary flex items-center gap-2 text-sm underline-offset-4 transition-colors hover:underline"
           >
             View Details <ArrowRight className="size-4" />
           </Link>
+=======
+         
+>>>>>>> a4715b9ca55a5aac3711b01148016aa9e91b204a
         </CardFooter>
       )}
     </Card>
