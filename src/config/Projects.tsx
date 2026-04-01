@@ -20,7 +20,7 @@ export const projects: Project[] = [
     link: 'https://www.educationtimesabroad.com/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> }, 
       { name: 'React', icon: <ReactIcon key="react" /> },
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
       { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
@@ -30,7 +30,6 @@ export const projects: Project[] = [
     github: 'https://github.com/laravelrytclick-gif/times-abroad',
     live: 'https://www.educationtimesabroad.com/',
     details: true,
-    projectDetailsPageSlug: '/projects/notesbuddy',
     isWorking: true,
   },
   {
@@ -49,7 +48,6 @@ export const projects: Project[] = [
     github: 'https://github.com/Sagarbisht99/fizzi-animinated-project',
     live: 'https://fizzi-animinated-project.vercel.app/',
     details: true,
-    projectDetailsPageSlug: '/projects/fizzi',
     isWorking: true,
   },
   {
@@ -67,10 +65,9 @@ export const projects: Project[] = [
       { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
       { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
     ],
-    github: 'https://github.com/ramxcodes/syncify',
+    github: 'https://github.com/sagarrytclick-a11y/my-mba-admission',
     live: 'https://www.mymbaadmission.com/',
     details: true,
-    projectDetailsPageSlug: '/projects/syncify',
     isWorking: true,
   },
   {
@@ -90,7 +87,22 @@ export const projects: Project[] = [
     live: 'https://encrypto-hub.vercel.app/',
     details: true,
     github: 'https://github.com/Sagarbisht99/EncryptoHub',
-    projectDetailsPageSlug: '/projects/encrypto-hub',
     isWorking: true, // Currently in development
+  },
+  {
+    title: 'AI Landing Page',
+    description:  
+      'AI Landing Page for a company',
+    image: '/project/ai-landing-page.png',
+    link: 'https://ai-landing-page-seven-theta.vercel.app/',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+    ],
+    live: 'https://ai-landing-page-seven-theta.vercel.app/',
+    details: false,
+    github: 'https://github.com/Sagarbisht99/AI-Landing-Page',
+    isWorking: false, // Currently in development
   },
 ];

@@ -30,8 +30,10 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
 
+  const detailsHref = project.projectDetailsPageSlug;
+
   return (
-    <Card className="group h-full w-full overflow-hidden border-gray-100 p-0 shadow-none transition-all dark:border-gray-800">
+    <Card className="group flex h-full w-full flex-col overflow-hidden border-gray-100 p-0 shadow-none transition-all dark:border-gray-800">
       <CardHeader className="p-0">
         <div className="group relative aspect-video overflow-hidden">
           <Image
@@ -44,7 +46,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.video && (
             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
               <DialogTrigger asChild>
-                <div className="absolute inset-0 flex cursor-pointer items-center justify-center bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:backdrop-blur-xs">
+                <div className="absolute inset-0 flex cursor-pointer items-center justify-center bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:backdrop-blur-sm">
                   <button className="flex size-16 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-colors duration-200 group-hover:cursor-pointer hover:bg-white/30">
                     <PlayCircle />
                   </button>
@@ -67,18 +69,24 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardHeader>
 
-      <CardContent className="px-6">
+      <CardContent className="flex-1 px-6 py-5">
         <div className="space-y-4">
           {/* Project Header - Title and Icons */}
           <div className="flex items-center justify-between gap-4">
-            <Link href={project.projectDetailsPageSlug}>
-              <h3 className="group-hover:text-primary text-xl leading-tight font-semibold hover:cursor-pointer">
+            {detailsHref ? (
+              <Link href={detailsHref}>
+                <h3 className="group-hover:text-primary text-xl leading-tight font-semibold hover:cursor-pointer">
+                  {project.title}
+                </h3>
+              </Link>
+            ) : (
+              <h3 className="text-xl leading-tight font-semibold">
                 {project.title}
               </h3>
-            </Link>
+            )}
             <div className="flex items-center gap-2">
               <Tooltip>
-                <TooltipTrigger>
+                <TooltipTrigger asChild>
                   <Link
                     className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
                     href={project.link}
@@ -91,9 +99,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
                   <p>View Website</p>
                 </TooltipContent>
               </Tooltip>
-              <Tooltip>
-                <TooltipTrigger>
-                  {project.github && (
+              {project.github && (
+                <Tooltip>
+                  <TooltipTrigger asChild>
                     <Link
                       className="text-secondary hover:text-primary flex size-6 items-center justify-center transition-colors"
                       href={project.github}
@@ -101,12 +109,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
                     >
                       <Github />
                     </Link>
-                  )}
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>View GitHub</p>
-                </TooltipContent>
-              </Tooltip>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>View GitHub</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
             </div>
           </div>
 
@@ -122,7 +130,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               {project.technologies.map((technology, index) => (
                 <Tooltip key={index}>
                   <TooltipTrigger>
-                    <div className="size-6 transition-all duration-300 hover:scale-120 hover:cursor-pointer">
+                    <div className="size-6 transition-all duration-300 hover:scale-125 hover:cursor-pointer">
                       {technology.icon}
                     </div>
                   </TooltipTrigger>
@@ -136,8 +144,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardContent>
 
-      {project.details && (
-        <CardFooter className="flex justify-between p-6 pt-0">
+      {project.details && detailsHref && (
+        <CardFooter className="mt-auto flex items-center justify-between gap-4 p-6 pt-0">
           <div
             className={`flex items-center gap-1 rounded-md px-2 py-1 text-xs ${
               project.isWorking
@@ -158,7 +166,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             )}
           </div>
           <Link
-            href={project.projectDetailsPageSlug}
+            href={detailsHref}
             className="text-secondary hover:text-primary flex items-center gap-2 text-sm underline-offset-4 transition-colors hover:underline"
           >
             View Details <ArrowRight className="size-4" />

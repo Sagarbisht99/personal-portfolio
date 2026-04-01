@@ -4,11 +4,11 @@ export interface Project {
   image: string;
   video?: string;
   link: string;
+  projectDetailsPageSlug?: string;
   technologies: { name: string; icon: React.ReactNode }[];
   github?: string;
   live: string;
   details: boolean;
-  projectDetailsPageSlug: string;
   isWorking: boolean;
 }
 
