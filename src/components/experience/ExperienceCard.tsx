@@ -1,5 +1,6 @@
 "use client"
 import { type Experience } from '@/config/Experience';
+import { getExperienceDuration } from '@/lib/experience';
 import { cn } from '@/lib/utils';
 import { Link } from 'next-view-transitions';
 import Image from 'next/image';
@@ -22,6 +23,11 @@ const parseDescription = (text: string): string => {
 
 export function ExperienceCard({ experience }: ExperienceCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const duration = getExperienceDuration(
+    experience.startDate,
+    experience.endDate,
+    experience.isCurrent,
+  );
 
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded);
@@ -145,6 +151,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           <p>
             {experience.startDate} -{' '}
             {experience.isCurrent ? 'Present' : experience.endDate}
+            {duration && ` (${duration})`}
           </p>
           <p>{experience.location}</p>
         </div>

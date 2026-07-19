@@ -86,6 +86,23 @@ export const pageMetadata: Record<string, PageMeta> = {
     twitterCard: 'summary_large_image',
   },
 
+  // Live Projects page
+  '/live-projects': {
+    title: 'Live Projects - Production Websites',
+    description:
+      'Browse live websites, landing pages, and production projects currently deployed and accessible online.',
+    keywords: [
+      'live projects',
+      'websites',
+      'landing pages',
+      'production',
+      'portfolio',
+      'web development',
+    ],
+    ogImage: '/meta/projects.png',
+    twitterCard: 'summary_large_image',
+  },
+
   // Blog page
   '/blog': {
     title: 'Blog - Thoughts & Tutorials',
