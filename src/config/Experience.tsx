@@ -37,6 +37,29 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     isCurrent: true,
+    company: 'CSS Founder',
+    position: 'Full Stack Developer',
+    location: 'Noida (On-site)',
+    image: '/company/cssfounder.png',
+    website: 'https://www.cssfounder.com/',
+    description: [
+      'Architected a high-performance CRM infrastructure using Next.js and React Query, focusing on real-time data synchronization and complex state management.',
+      'Implemented advanced data-fetching strategies with TanStack Query to handle large-scale MongoDB datasets, ensuring sub-second UI responsiveness.',
+      'Developed modular, reusable UI systems designed to support dynamic, data-driven promotional campaign builders.',
+      'Optimized frontend performance and Core Web Vitals, establishing the foundation for a scalable, enterprise-grade SaaS platform.',
+    ],
+    startDate: 'Jul 2026',
+    endDate: 'Present',
+    technologies: [
+      { name: 'Next.js', href: 'https://nextjs.org/', icon: <NextJs /> },
+      { name: 'TypeScript', href: 'https://typescriptlang.org/', icon: <TypeScript /> },
+      { name: 'Tailwind CSS', href: 'https://tailwindcss.com/', icon: <TailwindCss /> },
+      { name: 'JavaScript', href: 'https://www.javascript.com/', icon: <JavaScript /> },
+    ],
+    linkedin: 'https://www.linkedin.com/company/cssfounder.com/',
+  } , 
+  {
+    isCurrent: false,
     company: 'Vidya Vridhi',
     position: 'Full Stack Developer',
     location: 'Noida (On-site)',
@@ -48,8 +71,8 @@ export const experiences: Experience[] = [
       'Developed modular, reusable UI systems designed to support dynamic, data-driven promotional campaign builders.',
       'Optimized frontend performance and Core Web Vitals, establishing the foundation for a scalable, enterprise-grade SaaS platform.',
     ],
-    startDate: 'November 2023',
-    endDate: 'Present',
+    startDate: 'Nov 2025',
+    endDate: 'Jul 2026',
     technologies: [
       { name: 'Next.js', href: 'https://nextjs.org/', icon: <NextJs /> },
       { name: 'TanStack Query', href: 'https://tanstack.com/query', icon: <TanStackQuery /> },
@@ -63,7 +86,7 @@ export const experiences: Experience[] = [
     isCurrent: false,
     company: 'FreeLancer',
     position: 'Full Stack Developer',
-    location: 'Remote (On-site)',
+    location: 'Remote',
     image: '/company/freelance.png',
     website: 'https://upwork.com',
     description: [
@@ -71,8 +94,8 @@ export const experiences: Experience[] = [
       'Integrated a user-friendly dashboard for content editors to update and publish content on the website.',
       'Implemented a feature to track and analyze user engagement metrics, such as page views, click-through rates, and user behavior patterns.',
     ],
-    startDate: 'April 2024',
-    endDate: 'November 2024',
+    startDate: 'Apr 2024',
+    endDate: 'Nov 2024',
     technologies: [
       { name: 'WordPress', href: 'https://wordpress.com/', icon: <WordPress /> },
       { name: 'MySQL', href: 'https://www.mysql.com/', icon: <MySQL /> },
@@ -92,8 +115,8 @@ export const experiences: Experience[] = [
       'Integrated a user-friendly dashboard for content editors to update and publish content on the website.',
       'Implemented a feature to track and analyze user engagement metrics, such as page views, click-through rates, and user behavior patterns.',
     ],
-    startDate: 'January 2024',
-    endDate: 'April 2024',
+    startDate: 'Jan 2024',
+    endDate: 'Apr 2024',
     technologies: [
       { name: 'WordPress', href: 'https://wordpress.com/', icon: <WordPress /> },
       { name: 'MySQL', href: 'https://www.mysql.com/', icon: <MySQL /> },
