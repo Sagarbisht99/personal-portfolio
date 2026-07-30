@@ -20,7 +20,7 @@ export const navbarConfig = {
       href: '/projects',
     },
     {
-      label: 'Live Projects',
+      label: 'Live',
       href: '/live-projects',
     },
   ] as NavItem[],

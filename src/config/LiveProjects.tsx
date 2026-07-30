@@ -114,4 +114,8 @@ export const liveProjects: LiveProject[] = [
     domain: 'summitfoundationglobal.com',
     url: 'https://www.summitfoundationglobal.com/',
   },
+  {
+    domain: 'https://coffee-on-bilingual-website.vercel.app/',
+    url: 'https://coffee-on-bilingual-website.vercel.app/',
+  }
 ];

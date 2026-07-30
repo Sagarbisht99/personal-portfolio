@@ -25,7 +25,7 @@ export function LiveProjectList({ projects }: LiveProjectListProps) {
   }
 
   return (
-    <div className="grid gap-3 sm:grid-cols-2">
+    <div className="grid gap-2 sm:grid-cols-2">
       {uniqueProjects.map((project) => (
         <Link
           key={project.url}
@@ -33,21 +33,21 @@ export function LiveProjectList({ projects }: LiveProjectListProps) {
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
-            'group flex items-center justify-between gap-3 rounded-xl border bg-card px-4 py-3 shadow-sm transition-colors',
+            'group flex items-center justify-between gap-2 rounded-lg border bg-card px-3 py-2 shadow-sm transition-colors',
             'hover:border-primary/40 hover:bg-accent/40',
           )}
         >
-          <div className="min-w-0 space-y-1">
-            <p className="truncate font-medium group-hover:text-primary">
+          <div className="min-w-0 space-y-0.5">
+            <p className="truncate text-sm font-medium group-hover:text-primary">
               {project.domain}
             </p>
             {project.type && (
-              <Badge variant="secondary" className="text-[11px]">
+              <Badge variant="secondary" className="text-[10px]">
                 {project.type}
               </Badge>
             )}
           </div>
-          <ArrowUpRight className="size-4 shrink-0 opacity-50 transition-opacity group-hover:opacity-100 dark:fill-white" />
+          <ArrowUpRight className="size-3.5 shrink-0 opacity-50 transition-opacity group-hover:opacity-100 dark:fill-white" />
         </Link>
       ))}
     </div>
