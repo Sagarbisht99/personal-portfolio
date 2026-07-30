@@ -117,5 +117,13 @@ export const liveProjects: LiveProject[] = [
   {
     domain: 'https://coffee-on-bilingual-website.vercel.app/',
     url: 'https://coffee-on-bilingual-website.vercel.app/',
+  } , 
+  {
+    domain: 'real-eastate-theme-1.vercel.app/?theme=template-1',
+    url: 'https://real-eastate-theme-1.vercel.app/?theme=template-1',
+  } , 
+  {
+    domain: 'cssfounder.com',
+    url: 'https://www.cssfounder.com/',
   }
 ];

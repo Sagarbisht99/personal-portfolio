@@ -27,6 +27,12 @@ export default function LiveProjectsPage() {
         <div className="space-y-4 text-center">
           <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
             Live Projects
+            {liveProjects.length > 0 && (
+              <span className="text-muted-foreground ml-2 text-lg font-normal lg:text-xl">
+                ({liveProjects.length}{' '}
+                {liveProjects.length === 1 ? 'project' : 'projects'})
+              </span>
+            )}
           </h1>
           <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
             Websites and landing pages currently live in production.
