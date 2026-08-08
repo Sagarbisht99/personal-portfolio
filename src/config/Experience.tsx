@@ -34,29 +34,6 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     isCurrent: true,
-    company: 'CSS Founder',
-    position: 'Full Stack Developer',
-    location: 'Noida (On-site)',
-    image: '/company/cssfounder.png',
-    website: 'https://www.cssfounder.com/',
-    description: [
-      'Architected a high-performance CRM infrastructure using Next.js and React Query, focusing on real-time data synchronization and complex state management.',
-      'Implemented advanced data-fetching strategies with TanStack Query to handle large-scale MongoDB datasets, ensuring sub-second UI responsiveness.',
-      'Developed modular, reusable UI systems designed to support dynamic, data-driven promotional campaign builders.',
-      'Optimized frontend performance and Core Web Vitals, establishing the foundation for a scalable, enterprise-grade SaaS platform.',
-    ],
-    startDate: 'Jul 2026',
-    endDate: 'Present',
-    technologies: [
-      { name: 'Next.js', href: 'https://nextjs.org/', icon: <NextJs /> },
-      { name: 'TypeScript', href: 'https://typescriptlang.org/', icon: <TypeScript /> },
-      { name: 'Tailwind CSS', href: 'https://tailwindcss.com/', icon: <TailwindCss /> },
-      { name: 'JavaScript', href: 'https://www.javascript.com/', icon: <JavaScript /> },
-    ],
-    linkedin: 'https://www.linkedin.com/company/cssfounder.com/',
-  } , 
-  {
-    isCurrent: false,
     company: 'Vidya Vridhi',
     position: 'Full Stack Developer',
     location: 'Noida (On-site)',
@@ -69,7 +46,7 @@ export const experiences: Experience[] = [
       'Optimized frontend performance and Core Web Vitals, establishing the foundation for a scalable, enterprise-grade SaaS platform.',
     ],
     startDate: 'Nov 2025',
-    endDate: 'Jul 2026',
+    endDate: 'Present',
     technologies: [
       { name: 'Next.js', href: 'https://nextjs.org/', icon: <NextJs /> },
       { name: 'TanStack Query', href: 'https://tanstack.com/query', icon: <TanStackQuery /> },

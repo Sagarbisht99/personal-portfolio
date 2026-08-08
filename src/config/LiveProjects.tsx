@@ -1,4 +1,4 @@
-export type LiveProjectType = 'Landing Page' | 'CRM' | 'AI Website';
+export type LiveProjectType = 'Landing Page' | 'CRM' | 'AI Website' | 'Google Ads' | 'Portfolio';
 
 export interface LiveProject {
   domain: string;
@@ -24,7 +24,7 @@ export const liveProjects: LiveProject[] = [
   {
     domain: 'btechinbangalore.in',
     url: 'https://btechinbangalore.in',
-    type: 'Landing Page',
+    type: 'Google Ads',
   },
   {
     domain: 'diamondmatrimonialservices.com',
@@ -86,22 +86,22 @@ export const liveProjects: LiveProject[] = [
   {
     domain: 'abroadstudy4u.com/mbbs-in-russia',
     url: 'https://abroadstudy4u.com/mbbs-in-russia/',
-    type: 'Landing Page',
+    type: 'Google Ads',
   },
   {
     domain: 'abroadstudy4u.com/mbbs-in-india',
     url: 'https://abroadstudy4u.com/mbbs-in-india/',
-    type: 'Landing Page',
+    type: 'Google Ads',
   },
   {
     domain: 'abroadstudy4u.com/mbbs-in-georgia',
     url: 'https://abroadstudy4u.com/mbbs-in-georgia',
-    type: 'Landing Page',
+    type: 'Google Ads',
   },
   {
     domain: 'abroadstudy4u.com/mbbs-in-kyrgyzstan',
     url: 'https://abroadstudy4u.com/mbbs-in-kyrgyzstan',
-    type: 'Landing Page',
+    type: 'Google Ads',
   },
   {
     domain: 'mbbsindianeet.com',
@@ -125,5 +125,33 @@ export const liveProjects: LiveProject[] = [
   {
     domain: 'cssfounder.com',
     url: 'https://www.cssfounder.com/',
+  } , 
+  {
+    domain: 'dreammedicine.org',
+    url: 'https://dreammedicine.org/',
+    type: 'Google Ads',
+  } , 
+  {
+    domain: 'lexiconmile.com',
+    url: 'https://lexiconmile.com/',
+    type: 'Google Ads',
+  } , {
+    domain: 'themedicaladmission.in',
+    url: 'https://themedicaladmission.in/',
+    type: 'Google Ads',
+  } , 
+  {
+    domain: 'coffee-on-bilingual-website.vercel.app',
+    url: 'https://coffee-on-bilingual-website.vercel.app/',
+  } , 
+  {
+    domain: 'faraz.site',
+    url: 'https://www.faraaz.site/',
+    type: 'Portfolio',
+  } , 
+  {
+    domain : 'thesumitnegi.site',
+    url: 'http://thesumitnegi.site/',
+    type: 'Portfolio',
   }
 ];
