@@ -153,5 +153,8 @@ export const liveProjects: LiveProject[] = [
     domain : 'thesumitnegi.site',
     url: 'http://thesumitnegi.site/',
     type: 'Portfolio',
+  } , {
+    domain: 'himalyaneducation.com',
+    url: 'https://himalyaneducation.com/',
   }
 ];

@@ -108,7 +108,7 @@ export const heroConfig = {
   // Description Configuration
   description: {
     template:
-      "I build production-ready full-stack applications **3x faster** than the average dev. I make website from scratch to end to end - from starting concept to deployed application. By orchestrating {skills:0}, {skills:1}, {skills:2}, {skills:3} , {skills:4} , {skills:5} and {skills:6} through an **AI-first workflow** , I bridge the gap between complex design and rapid deployment. While others are still boilerplate-coding, I'm already shipping. As a swing trader, I consistently generate around <b>6–10%</b> returns per month from the <b>stock market</b>.",
+      "I build production-ready full-stack applications **3x faster** than the average dev. I make website from scratch to end to end - from starting concept to deployed application. By orchestrating {skills:0}, {skills:1}, {skills:2}, {skills:3} , {skills:4} , {skills:5} and {skills:6} through an **AI-first workflow** , I bridge the gap between complex design and rapid deployment. While others are still boilerplate-coding, I'm already shipping — I've <b>done 42+ projects</b>. As a swing trader, I consistently generate around <b>6–10%</b> returns per month from the <b>stock market</b>.",
   },
 
   // Buttons Configuration

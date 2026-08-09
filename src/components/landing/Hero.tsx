@@ -24,6 +24,17 @@ export default function Hero() {
           </Skill>
         );
       } else if (part.type === 'bold' && 'text' in part) {
+        if (part.text.toLowerCase().includes('42+')) {
+          return (
+            <Link
+              key={part.key}
+              href="/live-projects"
+              className="text-primary whitespace-pre-wrap font-bold underline-offset-4 hover:underline"
+            >
+              {part.text}
+            </Link>
+          );
+        }
         return (
           <b key={part.key} className="text-primary whitespace-pre-wrap">
             {part.text}
