@@ -156,5 +156,41 @@ export const liveProjects: LiveProject[] = [
   } , {
     domain: 'himalyaneducation.com',
     url: 'https://himalyaneducation.com/',
-  }
+  },
+  {
+    domain: 'ad2print.in',
+    url: 'http://ad2print.in/',
+  },
+  {
+    domain: 'anitaprinters.in',
+    url: 'https://www.anitaprinters.in/',
+  },
+  {
+    domain: 'negicaterer.in',
+    url: 'https://negicaterer.in/',
+  },
+  {
+    domain: 'apply-mbbs-one.vercel.app',
+    url: 'https://apply-mbbs-one.vercel.app/',
+  },
+  {
+    domain: 'abroadstudy4u.com/us-bangla',
+    url: 'https://abroadstudy4u.com/us-bangla/',
+    type: 'Landing Page',
+  },
+  {
+    domain: 'abroadstudy4u.com/international-college',
+    url: 'https://abroadstudy4u.com/international-college/',
+    type: 'Landing Page',
+  },
+  {
+    domain: 'abroadstudy4u.com/zh-college',
+    url: 'https://abroadstudy4u.com/zh-college/',
+    type: 'Landing Page',
+  },
+  {
+    domain: 'abroadstudy4u.com/edumindo',
+    url: 'https://abroadstudy4u.com/edumindo/',
+    type: 'Landing Page',
+  },
 ];
