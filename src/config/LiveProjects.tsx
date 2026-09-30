@@ -170,8 +170,8 @@ export const liveProjects: LiveProject[] = [
     url: 'https://negicaterer.in',
   },
   {
-    domain: 'apply-mbbs-one.vercel.app',
-    url: 'applymbbs.in',
+    domain: 'applymbbs.in',
+    url: 'https://applymbbs.in',
   },
   {
     domain: 'abroadstudy4u.com/us-bangla',
