@@ -55,7 +55,27 @@ export const experiences: Experience[] = [
       { name: 'Tailwind CSS', href: 'https://tailwindcss.com/', icon: <TailwindCss /> },
     ],
     linkedin: 'https://in.linkedin.com/company/vidya-vriddhi',
-  } , 
+  },
+  {
+    isCurrent: false,
+    company: 'CSS Founder',
+    position: 'Ex-Full Stack Developer',
+    location: 'Remote',
+    image: '/company/cssfounder.png',
+    website: 'https://cssfounder.com',
+    description: [
+      'Worked as a full-time freelancer for 2 months, contributing as a Next.js developer on client-facing web products.',
+      'Built responsive, performance-focused interfaces using Next.js, TypeScript, and modern component-driven architecture.',
+      'Delivered end-to-end features with a focus on clean UI implementation, maintainability, and fast product iteration.',
+    ],
+    startDate: 'July 2026',
+    endDate: 'Sep 2026',
+    technologies: [
+      { name: 'Next.js', href: 'https://nextjs.org/', icon: <NextJs /> },
+      { name: 'TypeScript', href: 'https://typescriptlang.org/', icon: <TypeScript /> },
+      { name: 'Tailwind CSS', href: 'https://tailwindcss.com/', icon: <TailwindCss /> },
+    ],
+  },
   {
     isCurrent: false,
     company: 'FreeLancer',
