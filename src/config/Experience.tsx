@@ -77,7 +77,7 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    isCurrent: false,
+    isCurrent: true,
     company: 'FreeLancer',
     position: 'Full Stack Developer',
     location: 'Remote',
@@ -89,7 +89,7 @@ export const experiences: Experience[] = [
       'Implemented a feature to track and analyze user engagement metrics, such as page views, click-through rates, and user behavior patterns.',
     ],
     startDate: 'Apr 2024',
-    endDate: 'Nov 2024',
+    endDate: 'Present',
     technologies: [
       { name: 'WordPress', href: 'https://wordpress.com/', icon: <WordPress /> },
       { name: 'MySQL', href: 'https://www.mysql.com/', icon: <MySQL /> },
