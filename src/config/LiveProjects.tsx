@@ -193,4 +193,9 @@ export const liveProjects: LiveProject[] = [
     url: 'https://abroadstudy4u.com/edumindo/',
     type: 'Landing Page',
   },
+  {
+    domain: 'vidyavriddhi.org',
+    url : 'https://vidyavriddhi.org',
+    
+  }
 ];
