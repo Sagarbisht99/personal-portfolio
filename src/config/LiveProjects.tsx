@@ -76,7 +76,7 @@ export const liveProjects: LiveProject[] = [
   },
   { domain: 'key2education.com', url: 'https://www.key2education.com' },
   { domain: 'futuremindedu.in', url: 'https://www.futuremindedu.in/' },
-  { domain: 'jp-tech.vercel.app', url: 'https://jp-tech.vercel.app' },
+  { domain: 'jptechnologies.co', url: 'https://jptechnologies.co/' },
   { domain: 'theprint.in', url: 'https://theprint.in' },
   {
     domain: 'super-nova-ai-ruddy.vercel.app',
@@ -195,7 +195,11 @@ export const liveProjects: LiveProject[] = [
   },
   {
     domain: 'vidyavriddhi.org',
-    url : 'https://vidyavriddhi.org',
-    
-  }
+    url: 'https://vidyavriddhi.org',
+  },
+  {
+    domain: 'crm.vidyavriddhi.org',
+    url: 'https://crm.vidyavriddhi.org',
+    type: 'CRM',
+  },
 ];

@@ -1,4 +1,5 @@
 import { heroConfig, skillComponents, socialLinks } from '@/config/Hero';
+import { liveProjects } from '@/config/LiveProjects';
 import { parseTemplate } from '@/lib/hero';
 import { Link } from 'next-view-transitions';
 import Image from 'next/image';
@@ -6,10 +7,13 @@ import React from 'react';
 
 import Container from '../common/Container';
 import Skill from '../common/Skill';
+import Mail from '../svgs/Mail';
+import Phone from '../svgs/Phone';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 
 export default function Hero() {
   const { name, title, avatar, skills, description } = heroConfig;
+  const liveProjectCount = liveProjects.length;
 
   const renderDescription = () => {
     const parts = parseTemplate(description.template, skills);
@@ -24,14 +28,14 @@ export default function Hero() {
           </Skill>
         );
       } else if (part.type === 'bold' && 'text' in part) {
-        if (part.text.toLowerCase().includes('42+')) {
+        if (part.text.toLowerCase().includes('projects')) {
           return (
             <Link
               key={part.key}
               href="/live-projects"
               className="text-primary whitespace-pre-wrap font-bold underline-offset-4 hover:underline"
             >
-              {part.text}
+              {`done ${liveProjectCount}+ projects`}
             </Link>
           );
         }
@@ -75,22 +79,48 @@ export default function Hero() {
 
       {/* Social Links */}
       <div className=" flex gap-2">
-        {socialLinks.map((link) => (
-          <Tooltip key={link.name} delayDuration={0}>
-            <TooltipTrigger asChild>
-              <Link
-                href={link.href}
-                key={link.name}
-                className="text-secondary flex items-center gap-2"
-              >
-                <span className="size-6">{link.icon}</span>
-              </Link>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{link.name}</p>
-            </TooltipContent>
-          </Tooltip>
-        ))}
+        {socialLinks.map((link) => {
+          const className = 'text-secondary flex items-center gap-2';
+          const icon = <span className="size-6">{link.icon}</span>;
+
+          return (
+            <Tooltip key={link.name} delayDuration={0}>
+              <TooltipTrigger asChild>
+                {link.href.startsWith('tel:') ||
+                link.href.startsWith('mailto:') ? (
+                  <a href={link.href} className={className}>
+                    {icon}
+                  </a>
+                ) : (
+                  <Link href={link.href} className={className}>
+                    {icon}
+                  </Link>
+                )}
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{link.name}</p>
+              </TooltipContent>
+            </Tooltip>
+          );
+        })}
+      </div>
+
+      {/* Contact Details */}
+      <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-neutral-500 md:text-base">
+        <a
+          href="tel:+918287325773"
+          className="hover:text-primary flex items-center gap-2 transition-colors"
+        >
+          <Phone className="size-4" />
+          +91 82873 25773
+        </a>
+        <a
+          href="mailto:sagarbishtz589@gmail.com"
+          className="hover:text-primary flex items-center gap-2 transition-colors"
+        >
+          <Mail className="size-4" />
+          sagarbishtz589@gmail.com
+        </a>
       </div>
     </Container>
   );

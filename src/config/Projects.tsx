@@ -229,14 +229,14 @@ export const projects: Project[] = [
     description:
       'JP Technology is a Services for Website Development, Mobile App Development, Digital Marketing, and IT Solutions.',
     image: '/project/jp-technology.png',
-    link: 'https://jp-tech.vercel.app/',
+    link: 'https://jptechnologies.co/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'React', icon: <ReactIcon key="react" /> } , 
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
       {name : 'Vercel', icon: <Vercel key="vercel" /> } , 
     ],
-    live: 'https://jp-tech.vercel.app/',
+    live: 'https://jptechnologies.co/',
     details: true,
     github: 'https://github.com/sagarrytclick-a11y/JP-Tech',
     isWorking: true,
