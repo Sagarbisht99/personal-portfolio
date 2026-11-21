@@ -199,7 +199,7 @@ export const liveProjects: LiveProject[] = [
   },
   {
     domain: 'crm.vidyavriddhi.in',
-    url: 'https://crm.vidyavriddhi.org',
+    url: 'https://crm.vidyavriddhi.in',
     type: 'CRM',
   },
    {
