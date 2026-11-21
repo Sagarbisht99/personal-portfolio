@@ -198,8 +198,12 @@ export const liveProjects: LiveProject[] = [
     url: 'https://vidyavriddhi.org',
   },
   {
-    domain: 'crm.vidyavriddhi.org',
+    domain: 'crm.vidyavriddhi.in',
     url: 'https://crm.vidyavriddhi.org',
     type: 'CRM',
+  },
+   {
+    domain: 'suryapowerindustries.com',
+    url: 'https://www.suryapowerindustries.com',
   },
 ];
